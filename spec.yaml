@@ -1,0 +1,25 @@
+name: spec
+version: 1.0.0
+# similar to setup.py i.e. more like title
+description: Spec of Formula
+long_description: |
+  A **very long** description
+# https are mandatory
+url: https://to.the.actual/package
+homepage: https://to.the.homepage/of/package
+author: Name
+author_email: name@email.com
+license: MIT
+description: 'long description goes here'
+# This would just copy the files to the $datadir/filters folder
+# question: how would a single url point to 2 files? Does the URL suppose to be the path to `xyz.py` instead then?
+# should they copied to `xyz` and `abc`, i.e. no extension?
+# May be situation like these should be splited into 2 formulae?
+files: [xyz.py, abc.py]
+keywords: [example, spec]
+# may be for auto-gallery only. or may be also auto install these
+# should version be controlled? Our goal is not replicating a full package manager...
+install_requires: pantable
+installer: pep # or cabal, etc. , this would run "pep install xyz" instead of copying files
+homepage: 'https://github/someone/somerepo'
+conflicts_with: None

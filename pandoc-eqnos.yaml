@@ -1,0 +1,7 @@
+name: pandoc-eqnos
+  branches:
+    - branch: default
+      url-type: pip
+    - branch: dev
+      url: git://github.com/tomduck/pandoc-eqnos.git
+      url-type: simple

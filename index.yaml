@@ -1,0 +1,4 @@
+- name: caps
+- name: debug
+- name: tabulate-elements
+- name: pandoc-eqnos
